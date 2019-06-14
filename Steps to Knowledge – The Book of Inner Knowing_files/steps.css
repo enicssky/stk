@@ -1,0 +1,510 @@
+body, p, a, h1, h2, h3, h4, h5, h6, ul, ul li	{ margin: 0; padding: 0; text-decoration: none; }
+ul			{ list-style: none; }
+a			{ color: #369; }
+img			{ border: none; }
+
+/***** UTILS *****/
+.list-vertical li			{ float: none; }
+.list-horizontal li			{ float: left; }
+.centralize					{ display: inline-block; }
+/***** /UTILS ****/
+
+body {
+	background-color: #EFEBE3;
+	color: #333;
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+}
+#wrapper {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin: 20px auto;
+    overflow: hidden;
+
+	position: relative;
+}
+#home #wrapper, #faq #wrapper {
+    width: 860px;
+	padding: 20px 40px;
+}
+#step #wrapper, #translations #wrapper, #not-found #wrapper, #what #wrapper {
+    width: 600px;
+    padding: 20px 80px;
+}
+#step .wrapper-arrows {
+    width: 960px;
+	margin: 20px auto;
+	position: relative;
+}
+
+h1 {
+	margin-bottom: 40px;
+}
+h1 span {
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	text-align: center;
+}
+h1 span.title {
+	font-size: 54px;
+	line-height: 60px;
+	color: #990000;
+	display: block;
+	letter-spacing: 2px;
+}
+h1 span.subtitle {
+	font-size: 28px;
+	line-height: 34px;
+	color: #996600;
+	display: block;
+}
+
+body#step h1 span.title, body#translations h1 span.title, body#not-found h1 span.title, body#what h1 span.title {
+	font-size: 48px;
+	line-height: 54px;
+}
+body#step h1 span.subtitle, body#translations h1 span.subtitle, body#not-found h1 span.subtitle, body#what h1 span.subtitle {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.banner {
+    margin-bottom: 50px;
+	height: 324px;
+	text-align: center;
+}
+.banner .purpose {
+	width: 450px;
+	float: left;
+	text-align: center;
+	margin-top: 64px;
+}
+.banner .purpose p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 32px;
+	color: #996600;
+}
+.banner .book-cover {
+	width: 320px;
+	height: 324px;
+	float: left;
+	margin-left: 40px;
+}
+
+.step {
+	text-align: center;
+	overflow: hidden;
+}
+.step h2 {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	color: #996600;
+}
+.step .title {
+	margin: 0 auto 50px;
+	width: 500px;
+}
+.step .title h3 {
+	color: #990000;
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+	display: inline;
+	padding-bottom: 4px;
+}
+.step .title hr {
+	width: 300px;
+}
+.step .body {
+	text-align: left;
+}
+.step p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 28px;
+	text-indent: 40px;
+}
+.step p.first, .step p.practice {
+	text-indent: 0;
+}
+.step p.first span {
+    float: left;
+    font-family: 'Pinyon Script';
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-right: 14px;
+    margin-top: 10px;
+	margin-left: 18px;
+}
+.step p.practice span {
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	margin-right: 10px;
+	display: inline;
+}
+.step p.nnc {
+	text-align: center;
+	font-style: italic;
+}
+
+#what .step p {
+	text-indent: 0;
+}
+
+.content {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.intro {
+	float: left;
+	width: 320px;
+}
+.intro .what-is {
+	overflow: hidden;
+	margin-bottom: 12px;
+	float: left;
+	clear: both;
+}
+.intro .what-is h2 {
+	color: #990000;
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 18px;
+	margin-top: 18px;
+}
+.intro .what-is h2:first-child {
+	margin-top: 0;
+}
+.intro .what-is p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 26px;
+}
+.intro a:hover {
+	text-decoration: underline;
+}
+
+.intro .youtube {
+	overflow: hidden;
+	margin-bottom: 36px;
+	float: left;
+	clear: both;
+}
+.intro .testimonials {
+	overflow: hidden;
+	padding: 6px;
+	margin-top: 12px;
+	float: left;
+	clear: both;
+}
+.intro .testimonials p.quote {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 6px;
+	box-shadow: 0 0 6px #bbb;
+	background-color: #f1f1f1;
+	padding: 8px 12px 10px 32px;
+	position: relative;
+	border: 1px solid #ccc;
+}
+.intro .testimonials p.author {
+    text-align: right;
+	margin-bottom: 26px;
+	font-size: 14px;
+	line-height: 24px;
+}
+span.laquo {
+	background: url('../img/laquo.png') no-repeat;
+	width: 14px;
+	height: 11px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	display: block;
+}
+span.raquo {
+	background: url('../img/raquo.png') no-repeat right 4px;
+	width: 13px;
+	height: 15px;
+	padding-left: 6px;
+	display: inline-block;
+}
+
+.index {
+	float: left;
+	margin-left: 60px;
+	width: 470px;
+}
+.index h2 {
+	color: #990000;
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 18px;
+	margin-top: 18px;
+}
+.index ul li {
+	line-height: 28px;
+	clear: both;
+}
+.index ul li.spacer {
+	text-align: center;
+	line-height: 42px;
+}
+.index ul li.spacer img {
+	margin-right: 80px;
+}
+
+.index ul li span {
+	width: 82px;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+}
+.index ul li span.losangle {
+	text-align: center;
+}
+.index ul li a {
+	width: 380px;
+	float: left;
+	display: block;
+	color: #333;
+	font-family: 'Cinzel','Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 28px;
+	text-decoration: underline;
+}
+.index ul li a:hover {
+	color: #999;
+}
+
+.facebook-comments {
+	margin-top: 40px;
+	overflow: hidden;
+
+	background-color: #fff;
+	margin: 20px auto;
+	width: 720px;
+	padding: 20px;
+	text-align: center;
+}
+.single-faq {
+	overflow: hidden;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.single-faq a:hover {
+	text-decoration: underline;
+}
+
+.footer-wrapper {
+	background-color: #E3DED8;
+}
+.footer {
+	overflow: hidden;
+	clear: both;
+	margin-top: 40px;
+	text-align: center;
+
+    padding: 20px 40px 30px;
+    width: 860px;
+	margin: 20px auto 0;
+}
+.footer .get-steps, .footer .more-mvs {
+	width: 300px;
+	float: left;
+	text-align: left;
+}
+.footer .more-mvs {
+	margin-left: 40px;
+}
+.footer h2 {
+	color: #990000;
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+.footer ul {
+	list-style: circle;
+}
+.footer ul li {
+	line-height: 26px;
+}
+.footer ul li a {
+	color: #369;
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer .excerpt {
+	clear: both;
+	padding-top: 20px;
+}
+.footer .excerpt p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.faq-questions {
+	width: 300px;
+	float: left;
+	border-right: 2px solid beige;
+}
+.faq-questions a {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	display: block;
+	padding: 8px 12px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-radius: 4px;
+}
+.faq-questions a:hover {
+	background-color: #F7F5F1;
+}
+.faq-questions a.active {
+	color: #990000;
+	border-top: 2px solid beige;
+	border-left: 2px solid beige;
+	border-bottom: 2px solid beige;
+	background-color: #F7F5F1;
+}
+
+.faq-answers {
+	width: 460px;
+	float: left;
+	border-top: 2px solid beige;
+	padding: 16px 28px 0;
+}
+.faq-answers p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 26px;
+	margin-bottom: 26px;
+}
+.faq-answers a:hover {
+	text-decoration: underline;
+}
+.faq-answers ul {
+	list-style-image: url('../img/Steps-arabesque.png');
+	list-style-position: inside;
+	margin-left: 14px;
+}
+.faq-answers ul li {
+	margin-bottom: 22px;
+	text-indent: 28px;
+	font-size: 17px;
+	line-height: 26px;
+}
+
+.arrow {
+	display: block;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	background-image: none;
+}
+.arrow.next {
+	width: 100px;
+	right: 0;
+	background: url('../img/arrow-right-25.png') center 50% no-repeat;
+}
+.arrow.previous {
+	width: 100px;
+	left: 0px;
+	background: url('../img/arrow-left-25.png') center 50% no-repeat;
+}
+.arrow.next:hover {
+	background: url('../img/arrow-right-50.png') center 50% no-repeat;
+}
+.arrow.previous:hover {
+	background: url('../img/arrow-left-50.png') center 50% no-repeat;
+}
+
+.translations {
+	margin-bottom: 40px;
+	clear: both;
+	overflow: hidden;
+}
+h2.translations {
+	color: #990000;
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 40px;
+	text-align: center;
+	display: block;
+}
+.translations .book-cover {
+	float: left;
+	margin-right: 40px;
+}
+.translations .book-info {
+	float: left;
+	margin-top: 50px;
+	width: 300px;
+}
+.translations .book-info h3 {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 12px;
+}
+.translations .book-info a {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.not-found {
+	margin: 60px 0 40px;
+	clear: both;
+	overflow: hidden;
+}
+.not-found h2 {
+	color: #990000;
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 40px;
+	text-align: center;
+	display: block;
+}
+.not-found p {
+	font-family: 'Palatino Linotype',Palatino,'Book Antiqua',serif;
+	font-size: 16px;
+	line-height: 24px;
+}
